@@ -211,6 +211,12 @@ namespace login_page_withDB
 
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            FrmPengguna frmPengguna = new FrmPengguna();
+            frmPengguna.Show();
+        }
+
         private void FormMain_Load(object sender, EventArgs e)
         {
             try

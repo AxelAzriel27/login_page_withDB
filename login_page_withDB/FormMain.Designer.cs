@@ -45,6 +45,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CReport = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,7 +162,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(593, 202);
+            this.btnUpdate.Location = new System.Drawing.Point(593, 169);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(85, 42);
             this.btnUpdate.TabIndex = 12;
@@ -170,7 +172,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(740, 202);
+            this.btnDelete.Location = new System.Drawing.Point(740, 169);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(85, 42);
             this.btnDelete.TabIndex = 13;
@@ -180,7 +182,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(593, 294);
+            this.btnClear.Location = new System.Drawing.Point(593, 229);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(85, 42);
             this.btnClear.TabIndex = 15;
@@ -190,7 +192,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(740, 294);
+            this.btnLogout.Location = new System.Drawing.Point(740, 229);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(85, 42);
             this.btnLogout.TabIndex = 16;
@@ -208,12 +210,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(796, 340);
             this.dataGridView1.TabIndex = 17;
             // 
+            // CReport
+            // 
+            this.CReport.Location = new System.Drawing.Point(0, 0);
+            this.CReport.Name = "CReport";
+            this.CReport.Size = new System.Drawing.Size(75, 23);
+            this.CReport.TabIndex = 0;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(593, 307);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(85, 48);
+            this.btnPrint.TabIndex = 18;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(43)))), ((int)(((byte)(93)))));
             this.ClientSize = new System.Drawing.Size(857, 820);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.CReport);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnClear);
@@ -260,5 +281,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button CReport;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
